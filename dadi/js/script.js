@@ -27,18 +27,18 @@ buttonElement.addEventListener("click",
     function () {
 
         if (randomUser > randomComputer) {
-            resultElement.innerHTML = `user`
+            resultElement.innerHTML = `Hai vinto!`
         }
         
         else if (randomUser < randomComputer) {
-            resultElement.innerHTML = `${randomComputer}computer`
+            resultElement.innerHTML = `Il computer vince`
         }
 
         else if (randomUser = randomComputer) {
-            resultElement.innerHTML = `pareggio`
+            resultElement.innerHTML = `Pareggio`
         }
     } 
 )
 
-console.log(randomUser)
-console.log(randomComputer)
+// console.log(randomUser)
+// console.log(randomComputer)
