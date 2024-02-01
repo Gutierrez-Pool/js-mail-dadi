@@ -11,18 +11,34 @@
 
 const resultElement = document.querySelector("#result")
 
+const buttonElement = document.querySelector("input[type='button']")
+
 function random(min, max) {
     return Math.floor((Math.random() * (max - min + 1)) + min);
 }
-
 let randomUser = random(1, 6);
-
 let randomComputer = random(1, 6)
 
 
-if (randomUser > randomComputer) {
-    resultElement.innerHTML = `Io vinco`
-}
+
+
+buttonElement.addEventListener("click",
+
+    function () {
+
+        if (randomUser > randomComputer) {
+            resultElement.innerHTML = `user`
+        }
+        
+        else if (randomUser < randomComputer) {
+            resultElement.innerHTML = `${randomComputer}computer`
+        }
+
+        else if (randomUser = randomComputer) {
+            resultElement.innerHTML = `pareggio`
+        }
+    } 
+)
 
 console.log(randomUser)
 console.log(randomComputer)
