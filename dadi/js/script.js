@@ -19,9 +19,6 @@ function random(min, max) {
 let randomUser = random(1, 6);
 let randomComputer = random(1, 6)
 
-
-
-
 buttonElement.addEventListener("click",
 
     function () {
@@ -37,8 +34,17 @@ buttonElement.addEventListener("click",
         else if (randomUser = randomComputer) {
             resultElement.innerHTML = `Pareggio`
         }
+        
+        const tuoPunteggioElement = document.querySelector(".tuo-punteggio")
+        tuoPunteggioElement.innerText = `${randomUser}`
+        
+        const comPunteggioElement = document.querySelector(".com-punteggio")
+        comPunteggioElement.innerText = `${randomComputer}`
     } 
 )
+    
+
+
 
 // console.log(randomUser)
 // console.log(randomComputer)
